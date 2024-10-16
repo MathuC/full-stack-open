@@ -1,0 +1,12 @@
+GET http://localhost:3001/api/notes/
+
+###
+POST http://localhost:3001/api/notes/
+content-type: application/json
+
+{
+    "content": "I hate to make small talk with strangers"
+}
+
+###
+DELETE http://localhost:3001/api/notes/4
