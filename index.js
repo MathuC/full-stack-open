@@ -6,6 +6,8 @@ app.use(cors())
 
 app.use(express.json()) // activate the Express json parser
 
+app.use(express.static('dist')) // so that backend serves static frontend files (dist folder)
+
 const requestLogger = (request, response, next) => {
   console.log('Method:', request.method)
   console.log('Path:  ', request.path)
